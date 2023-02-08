@@ -45,7 +45,7 @@ jobs:
 
       - run: npx nx version is-even --push
 
-      - run: npx nx github is-even
+      # - run: npx nx github is-even
 
       # - name: Tag last-release
       #   if: ${{ env.DRYRUN == 'false' }}
