@@ -29,10 +29,7 @@
       }
     },
     "version": {
-      "executor": "@jscutlery/semver:version",
-      "options": {
-        "postTargets": ["is-even:github"]
-      }
+      "executor": "@jscutlery/semver:version"
     },
     "github": {
       "executor": "@jscutlery/semver:github",
