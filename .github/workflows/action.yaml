@@ -43,7 +43,7 @@ jobs:
 
       - run: npm ci
 
-      - run: npx nx version is-even
+      - run: npx nx version is-even --push
 
       - run: npx nx github is-even
 
