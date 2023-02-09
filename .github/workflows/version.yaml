@@ -33,13 +33,11 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "whatever@whatever.com"
 
-      # - name: Setup node
-      #   uses: actions/setup-node@v3
-      #   with:
-      #     node-version: ${{ env.NODE_VERSION }}
-      #     cache: 'npm'
-      #     registry-url: 'https://npm.pkg.github.com'
-      #     # scope: '@miguelmoreba'
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@miguelmoreba'
 
       - run: npm ci
 
