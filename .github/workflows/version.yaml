@@ -41,7 +41,7 @@ jobs:
 
       - run: npm ci
 
-      - run: npx nx version is-even --push
+      - run: npx nx affected --target=version --parallel=1 --push
 
       # - name: Tag last-release
       #   if: ${{ env.DRYRUN == 'false' }}
