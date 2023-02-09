@@ -31,7 +31,7 @@
     "version": {
       "executor": "@jscutlery/semver:version",
       "options": {
-        "postTargets": ["is-even:github"]
+        "postTargets": ["is-even:github", "is-even:npm"]
       }
     },
     "github": {
