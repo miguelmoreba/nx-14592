@@ -27,5 +27,6 @@ jobs:
       
       # Publish to GitHub Packages
       - run: npm publish
+        working-directory: ./packages/is-even
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
