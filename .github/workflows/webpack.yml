@@ -1,0 +1,19 @@
+name: NodeJS with Webpack
+
+on:
+  workflow_dispatch:
+    inputs:
+      whatever:
+        description: Ignore 'use workflow from', run from tag that generated the docker image
+        type: boolean
+        required: false
+        default: true
+  
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello World"
+      
+  
+
